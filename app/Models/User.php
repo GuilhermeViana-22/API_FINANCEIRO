@@ -155,4 +155,13 @@ public function rules()
     return $this->belongsToMany(Rule::class, 'rule_users');
 }
 
+
+
+    /**
+     * Get the gastos for the user.
+     */
+    public function gastos()
+    {
+        return $this->hasMany(Gasto::class);
+    }
 }

@@ -28,6 +28,10 @@ class DatabaseSeeder extends Seeder
             PeriodicidadeSeeder::class,
             UnidadesTableSeeder::class,
             UserSeeder::class,
+            BancosSeeder::class,
+            BancosSeeder::class,
+            FinanciamentoSeeder::class,
+            GastoSeeder::class,
         ]);
     }
 }

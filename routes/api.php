@@ -10,6 +10,8 @@ use App\Http\Controllers\CargoController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PerguntaController;
 use App\Http\Controllers\QuestionarioController;
+use App\Http\Controllers\GastoController;
+
 
 use Illuminate\Support\Facades\Route;
 
@@ -21,6 +23,13 @@ Route::post('/reset', [AuthController::class, 'reset'])->name('api.reset');
 
 // Rotas de teste (se realmente necessário)
 Route::get('/me', [AuthController::class, 'me'])->name('me');
+
+
+
+Route::apiResource('gastos', GastoController::class);
+
+
+
 
 
 // // Rotas para gestão de usuários (protegidas e com verificação de permissões)
